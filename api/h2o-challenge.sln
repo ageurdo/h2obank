@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Application", "h2o-challenge.Application\h2o-challenge.Application.csproj", "{4506829C-74D0-4368-A8EE-8E65086CBB63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Domain", "h2o-challenge.Domain\h2o-challenge.Domain.csproj", "{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Infra.Data", "h2o-challenge.Infra.Data\h2o-challenge.Infra.Data.csproj", "{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Infra.Ioc", "h2o-challenge.Infra.Ioc\h2o-challenge.Infra.Ioc.csproj", "{9343580B-A182-4929-9C16-2BFB7B9D7200}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Api", "h2o-challenge.Api\h2o-challenge.Api.csproj", "{2B12D3AA-9A13-440B-85BC-EB4B0626563C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4506829C-74D0-4368-A8EE-8E65086CBB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4506829C-74D0-4368-A8EE-8E65086CBB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4506829C-74D0-4368-A8EE-8E65086CBB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4506829C-74D0-4368-A8EE-8E65086CBB63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89C64429-5092-45D7-BF30-4A5D9BA83817}
+	EndGlobalSection
+EndGlobal

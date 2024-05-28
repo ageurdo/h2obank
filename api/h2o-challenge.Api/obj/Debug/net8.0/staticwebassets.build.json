@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QCjN3jUIqFDyCXeytVikrUaPzv27hmkEWTGsQUlwyV0=",
+  "Source": "h2o-challenge.Api",
+  "BasePath": "_content/h2o-challenge.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

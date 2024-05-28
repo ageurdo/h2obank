@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>h2o_challenge.Infra.Ioc</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\h2o-challenge.Application\h2o-challenge.Application.csproj" />
+    <ProjectReference Include="..\h2o-challenge.Domain\h2o-challenge.Domain.csproj" />
+    <ProjectReference Include="..\h2o-challenge.Infra.Data\h2o-challenge.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\h2o-challenge.Api.props" />
+</Project>

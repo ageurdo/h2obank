@@ -1,0 +1,6 @@
+@h2o_challenge.Api_HostAddress = http://localhost:5153
+
+GET {{h2o_challenge.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

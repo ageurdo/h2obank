@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.body{
+  @apply font-roboto;
+}
+
+.container {
+  @apply mx-auto px-4 px-8 py-4;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.input {
+  @apply w-full px-4 py-2 text-gray-700 bg-white border border-gray-300
+  rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 
+  focus:ring-blue-500 focus:border-blue-500 ;
+}
+
+.button {
+  @apply px-4 py-2  text-white bg-blue-500 border border-blue-500 rounded-md 
+  shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 
+  focus:border-blue-500 text-white;
+}
+
+.nav {
+  @apply flex items-center justify-between p-4 bg-blue-500 text-white;
+}
