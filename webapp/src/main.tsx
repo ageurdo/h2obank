@@ -1,12 +1,18 @@
 import React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./Routes/Dashboard";
-import CreateAccount from "./Routes/CreateAccount";
-import LoginAccount from "./Routes/LoginAccount";
-import TransferFunds from "./Routes/TransferFunds";
-import History from "./Routes/History";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import CreateAccount from "./Screens/CreateAccount";
+import LoginAccount from "./Screens/LoginAccount";
+import TransferFunds from "./Screens/TransferFunds";
+import History from "./Screens/History";
 import { ContextProvider } from "./Context/ContextProvider";
+import Layout from "./Components/Layout";
+import Dashboard from "./Screens/Dashboard";
 
 const rootElement = document.getElementById("root");
 
@@ -14,20 +20,24 @@ if (!rootElement) {
   throw new Error("No root element found");
 }
 
-export const router = createBrowserRouter([
-  { path: "/", element: <Dashboard /> },
-  { path: "/login-account", element: <LoginAccount /> },
-  { path: "/create-account", element: <CreateAccount /> },
-  { path: "/transfer-funds", element: <TransferFunds /> },
-  { path: "/history", element: <History /> },
-]);
+export const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Layout />}>
+        <Route path="create" element={<CreateAccount />} />
+        <Route path="login" element={<LoginAccount />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="transfer" element={<TransferFunds />} />
+        <Route path="history" element={<History />} />
+      </Route>
+    </>
+  )
+);
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <ContextProvider>
-      <div className="body">
-        <RouterProvider router={router}></RouterProvider>
-      </div>
+      <RouterProvider router={router}></RouterProvider>
     </ContextProvider>
   </React.StrictMode>
 );

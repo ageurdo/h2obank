@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9eTz1yLWDKs=",
+  "dgSpecHash": "+Wttrn7ZERA=",
   "success": true,
-  "projectFilePath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
+  "projectFilePath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janela\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Janela\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

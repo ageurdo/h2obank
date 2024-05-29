@@ -2809,11 +2809,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
+      "projectUniqueName": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
       "projectName": "h2o-challenge.Infra.Ioc",
-      "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
+      "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Ioc\\h2o-challenge.Infra.Ioc.csproj",
       "packagesPath": "C:\\Users\\Janela\\.nuget\\packages\\",
-      "outputPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Ioc\\obj\\",
+      "outputPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Ioc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "e:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2835,14 +2835,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {
-              "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj"
+            "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {
+              "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj"
             },
-            "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
-              "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj"
+            "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
+              "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj"
             },
-            "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj": {
-              "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj"
+            "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj": {
+              "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj"
             }
           }
         }

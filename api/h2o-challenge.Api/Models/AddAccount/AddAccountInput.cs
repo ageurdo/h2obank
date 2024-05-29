@@ -1,4 +1,4 @@
-﻿namespace h2o_challenge.Api.Models.AddCustomer
+﻿namespace h2o_challenge.Api.Models.AddAccount
 {
     public class AddAccountInput
     {

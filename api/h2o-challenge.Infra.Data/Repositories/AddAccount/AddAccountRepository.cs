@@ -5,7 +5,6 @@ namespace h2o_challenge.Infra.Data.Repositories.AddAccount
 {
     public class AddAccountRepository : IAddAccountRepository
     {
-        //private readonly IList<Accounts> _accounts = new List<Accounts>();
         private readonly BancoContext _context;
 
         public AddAccountRepository(BancoContext context) { 

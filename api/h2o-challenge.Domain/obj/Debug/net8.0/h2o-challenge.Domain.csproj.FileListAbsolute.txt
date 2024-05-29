@@ -20,3 +20,15 @@ E:\Workspace\H20\Challenge\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challen
 E:\Workspace\H20\Challenge\api\h2o-challenge.Domain\obj\Debug\net8.0\refint\h2o-challenge.Domain.dll
 E:\Workspace\H20\Challenge\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.pdb
 E:\Workspace\H20\Challenge\api\h2o-challenge.Domain\obj\Debug\net8.0\ref\h2o-challenge.Domain.dll
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\bin\Debug\net8.0\h2o-challenge.Domain.deps.json
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\bin\Debug\net8.0\h2o-challenge.Domain.dll
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\bin\Debug\net8.0\h2o-challenge.Domain.pdb
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.AssemblyInfoInputs.cache
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.AssemblyInfo.cs
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.csproj.CoreCompileInputs.cache
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.sourcelink.json
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.dll
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\refint\h2o-challenge.Domain.dll
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\h2o-challenge.Domain.pdb
+E:\Workspace\H20\h2obank\api\h2o-challenge.Domain\obj\Debug\net8.0\ref\h2o-challenge.Domain.dll

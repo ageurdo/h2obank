@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YdPgKryNJUk=",
+  "dgSpecHash": "gQWZA+hzDLs=",
   "success": true,
-  "projectFilePath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
+  "projectFilePath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -7,7 +7,7 @@ namespace h2o_challenge.Infra.Data.Context
     {
         private IConfiguration _configuraciton;
 
-        public DbSet<Accounts> Accounts { get; set; }
+        public DbSet<Accounts> Accounts { get; set; }        
 
         public BancoContext(IConfiguration configuraciton, DbContextOptions options) : base(options)
         {

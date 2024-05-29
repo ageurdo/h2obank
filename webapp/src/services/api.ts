@@ -1,38 +1,34 @@
 import axios from "axios";
-import { Account, Transaction, TransactionFilters } from "./types";
+import {
+  Account,
+  Transaction,
+  TransactionFilters,
+  TransactionQuery,
+} from "./types";
 
-axios.defaults.baseURL = "https://ageu.com/";
+// const apiKey = process.env.REACT_APP_API_KEY;
+// console.log("API KEY: ", apiKey);
 
-// Create a new bank account
+axios.defaults.baseURL = "http://localhost:5153/api/";
+
 export function loginBankAccount(
   name: string
-): Promise<Omit<Account, "balance">> {
-  return axios
-    .post("/api/bank-accounts", { name })
-    .then((response) => response.data);
+): Promise<Account> {
+  return axios.post("/GetAccount", { name }).then((response) => response.data);
 }
-// Create a new bank account
 export function createBankAccount(
   name: string,
   balance: number
 ): Promise<Account> {
   return axios
-    .post("/api/bank-accounts", { name, balance })
+    .post("/AddAccount", { name, balance })
     .then((response) => response.data);
 }
 
-// Transfer funds between two bank accounts
-export function transferFunds(
-  sender: Account,
-  recipient: Account,
-  amount: number
-): Promise<void> {
-  return axios
-    .post("/api/transfer-funds", { sender, recipient, amount })
-    .then((response) => response.data);
+export function transfer(payload: TransactionQuery): Promise<void> {
+  return axios.post("/Transfer", payload).then((response) => response.data);
 }
 
-// Get all transactions
 export function getTransactions(
   filters: TransactionFilters,
   account: string

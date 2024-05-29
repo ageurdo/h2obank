@@ -12,6 +12,12 @@ export interface Transaction {
   timestamp: string;
 }
 
+export interface TransactionQuery {
+  sender: string;
+  recipient: string;
+  amount: number;
+}
+
 export interface TransactionFilters {
   startDate?: string;
   endDate?: string;

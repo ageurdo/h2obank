@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {}
+    "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {}
   },
   "projects": {
-    "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {
+    "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj",
+        "projectUniqueName": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj",
         "projectName": "h2o-challenge.Application",
-        "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj",
+        "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\h2o-challenge.Application.csproj",
         "packagesPath": "C:\\Users\\Janela\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Application\\obj\\",
+        "outputPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "e:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
-                "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj"
+              "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
+                "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
+    "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
+        "projectUniqueName": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
         "projectName": "h2o-challenge.Domain",
-        "projectPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
+        "projectPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\h2o-challenge.Domain.csproj",
         "packagesPath": "C:\\Users\\Janela\\.nuget\\packages\\",
-        "outputPath": "E:\\Workspace\\H20\\Challenge\\api\\h2o-challenge.Domain\\obj\\",
+        "outputPath": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "e:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

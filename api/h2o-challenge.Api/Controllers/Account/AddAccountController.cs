@@ -1,11 +1,10 @@
 ﻿using FluentValidation;
-using h2o_challenge.Api.Models.AddCustomer;
+using h2o_challenge.Api.Models.AddAccount;
 using h2o_challenge.Api.Models.Error;
-using h2o_challenge.Application.useCases.ContaBancaria;
 using h2o_challenge.Domain.Contracts.UseCases.AddAccount;
 using Microsoft.AspNetCore.Mvc;
 
-namespace h2o_challenge.Api.Controllers
+namespace h2o_challenge.Api.Controllers.Account
 {
     [Route("api/[controller]")]
     [ApiController]

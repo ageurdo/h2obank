@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = h2o_challenge.Infra.Data
-build_property.ProjectDir = E:\Workspace\H20\Challenge\api\h2o-challenge.Infra.Data\
+build_property.ProjectDir = E:\Workspace\H20\h2obank\api\h2o-challenge.Infra.Data\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

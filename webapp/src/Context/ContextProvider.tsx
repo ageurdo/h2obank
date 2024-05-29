@@ -1,13 +1,10 @@
 import React, { createContext, useState } from "react";
-
-interface Account {
-  name: string;
-  balance: number;
-}
+import { Account } from "../Services/types";
 
 interface AccountContextProps {
   account: Account;
-  createAccountContext: (name: string, balance: number) => void;
+  loginAccountContext: (accoutn: Account) => void;
+  logoutAccountContext: () => void;
 }
 
 export const AccountContext = createContext({} as AccountContextProps);
@@ -17,23 +14,26 @@ export const ContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [account, setAccount] = useState<Account>({
-    name: "",
-    balance: 0,
-  });
+  const [account, setAccount] = useState({} as Account);
 
-  const createAccountContext = (name: string, balance: number) => {
+  const loginAccountContext = ({ id, name, balance }: Account) => {
     const newAccount: Account = {
+      id: id,
       name: name,
       balance: balance,
     };
 
-    () => setAccount(newAccount);
-    console.log("passei no createAccountContext", newAccount);
+    setAccount(newAccount);
+  };
+
+  const logoutAccountContext = () => {
+    setAccount({} as Account);
   };
 
   return (
-    <AccountContext.Provider value={{ account, createAccountContext }}>
+    <AccountContext.Provider
+      value={{ account, loginAccountContext, logoutAccountContext }}
+    >
       {children}
     </AccountContext.Provider>
   );

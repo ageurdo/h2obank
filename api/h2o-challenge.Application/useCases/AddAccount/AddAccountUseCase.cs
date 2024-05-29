@@ -1,7 +1,7 @@
 ﻿using h2o_challenge.Domain.Contracts.Repositories.AddAccount;
 using h2o_challenge.Domain.Contracts.UseCases.AddAccount;
 
-namespace h2o_challenge.Application.useCases.ContaBancaria
+namespace h2o_challenge.Application.useCases.AddAccount
 {
     public class AddAccountUseCase : IAddAccountUseCase
     {
