@@ -10,11 +10,10 @@ export default function RootLayout() {
   const { account, logoutAccountContext } = useContext(AccountContext);
 
   useEffect(() => {
-    console.log("Condição ito", Object.keys(account).length > 0);
     if (Object.keys(account).length > 0) {
       navigate("/dashboard");
     } else navigate("/login");
-  }, [account]);
+  }, [account, navigate]);
 
   return (
     <div className="flex flex-col h-screen">

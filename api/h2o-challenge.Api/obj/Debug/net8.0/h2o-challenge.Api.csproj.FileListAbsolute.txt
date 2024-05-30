@@ -212,9 +212,7 @@ E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\runtimes\win\lib
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Application.dll
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Domain.dll
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Infra.Data.dll
-E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Infra.Ioc.dll
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Infra.Data.pdb
-E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Infra.Ioc.pdb
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Application.pdb
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\h2o-challenge.Domain.pdb
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\obj\Debug\net8.0\h2o-challenge.Api.csproj.AssemblyReference.cache
@@ -239,3 +237,4 @@ E:\Workspace\H20\h2obank\api\h2o-challenge.Api\obj\Debug\net8.0\refint\h2o-chall
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\obj\Debug\net8.0\h2o-challenge.Api.pdb
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\obj\Debug\net8.0\h2o-challenge.Api.genruntimeconfig.cache
 E:\Workspace\H20\h2obank\api\h2o-challenge.Api\obj\Debug\net8.0\ref\h2o-challenge.Api.dll
+E:\Workspace\H20\h2obank\api\h2o-challenge.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

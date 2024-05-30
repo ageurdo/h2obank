@@ -1,8 +1,11 @@
-﻿namespace h2o_challenge.Domain.Contracts.Repositories.AddAccount
+﻿using h2o_challenge.Domain.Results;
+using System.Security.Principal;
+
+namespace h2o_challenge.Domain.Contracts.Repositories.AddAccount
 {
     public interface IAddAccountRepository
     {
-        void AddAccount(Accounts account);
+        Task<RequestResult> AddAccount(Accounts account);
 
     }
 }

@@ -37,6 +37,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseExceptionHandler("/Error");
+
 }
 
 app.UseCors(options =>
@@ -45,6 +47,7 @@ app.UseCors(options =>
     options.AllowAnyMethod();
     options.AllowAnyHeader();
 });
+
 
 app.MapControllers();
 

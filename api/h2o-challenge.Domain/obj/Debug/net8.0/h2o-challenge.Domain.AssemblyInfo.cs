@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("h2o-challenge.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5472a92d1dec0623f4a2218ef7459a487ff535a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c498f11228e3fa8d7bb8ffab0603813382300019")]
 [assembly: System.Reflection.AssemblyProductAttribute("h2o-challenge.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("h2o-challenge.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

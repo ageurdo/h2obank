@@ -1,5 +1,6 @@
 ﻿using h2o_challenge.Domain.Contracts.Repositories.GetAccount;
 using h2o_challenge.Domain.Contracts.UseCases.GetAccount;
+using h2o_challenge.Domain.Results;
 
 namespace h2o_challenge.Application.useCases.GetAccount
 {
@@ -11,9 +12,17 @@ namespace h2o_challenge.Application.useCases.GetAccount
             _getAccountRepository = getAccountRepository;
         }
 
-        public Accounts GetAccount(string account)
+        public async Task<RequestResult> GetAccount(string account)
         {
-            return _getAccountRepository.GetAccount(account).Result;
+            try
+            {
+                return await _getAccountRepository.GetAccount(account);
+            }
+            catch (Exception ex)
+            {
+                var error = new RequestResult().BadRequest(ex.Message);
+                return new RequestResult() { Message = ex.Message, StatusCode = 400 };
+            }
         }
     }
 }

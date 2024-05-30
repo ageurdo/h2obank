@@ -3,6 +3,7 @@ using h2o_challenge.Api.Models.GetAccount;
 using h2o_challenge.Api.Models.Error;
 using h2o_challenge.Domain.Contracts.UseCases.GetAccount;
 using Microsoft.AspNetCore.Mvc;
+using Azure;
 
 namespace h2o_challenge.Api.Controllers
 {
@@ -20,7 +21,7 @@ namespace h2o_challenge.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult GetAccount(GetAccountInput input)
+        public async Task<IActionResult> GetAccount(GetAccountInput input)
         {
             var validationResult = _getAccountInputValidator.Validate(input);
 
@@ -28,8 +29,13 @@ namespace h2o_challenge.Api.Controllers
             {
                 return BadRequest(validationResult.Errors.ToCustomValidationFailure());
             }
-            var account = _getAccountUseCase.GetAccount(input.Name);
-            return Ok(account);
+            var response = await _getAccountUseCase.GetAccount(input.Name);
+
+            if (response.StatusCode.ToString().StartsWith(char.ToString('2')))
+                return Ok(response);
+            else
+                return BadRequest(response);
+
         }
     }
 }

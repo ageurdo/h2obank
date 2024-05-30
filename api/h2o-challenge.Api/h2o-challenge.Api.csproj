@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -11,12 +11,14 @@
     <PackageReference Include="FluentValidation" Version="11.9.1" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\h2o-challenge.Application\h2o-challenge.Application.csproj" />
+    <ProjectReference Include="..\h2o-challenge.Domain\h2o-challenge.Domain.csproj" />
     <ProjectReference Include="..\h2o-challenge.Infra.Data\h2o-challenge.Infra.Data.csproj" />
-    <ProjectReference Include="..\h2o-challenge.Infra.Ioc\h2o-challenge.Infra.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

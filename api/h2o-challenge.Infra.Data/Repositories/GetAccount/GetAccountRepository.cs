@@ -1,5 +1,7 @@
 ﻿using Azure;
+using h2o_challenge.Domain.Contracts.Repositories.AddAccount;
 using h2o_challenge.Domain.Contracts.Repositories.GetAccount;
+using h2o_challenge.Domain.Results;
 using h2o_challenge.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,14 +15,33 @@ namespace h2o_challenge.Infra.Data.Repositories.GetAccount
             _context = context;
         }
 
-        async Task<Accounts> IGetAccountRepository.GetAccount(string accountName)
+        public async Task<RequestResult> GetAccount(string accountName)
         {
-            var response = await _context.Accounts
-                .AsNoTracking()
-                .FirstOrDefaultAsync(a => a.Name == accountName);
+            var account = await _context.Accounts
+             .AsNoTracking()
+             .FirstOrDefaultAsync(a => a.Name == accountName);
 
-            return response;
+            if (account == null)
+            {
+                var error = $"Conta não encontrada com o nome: {accountName}";
+                throw new Exception(new RequestResult().BadRequest(error, 409).Message);
+            }
+
+            return new RequestResult().Ok(account);
+
         }
+
+        //public async Task<IEnumerable<Accounts>> GetAccountsByName(string name)
+        //{
+        //var response = await _context.Accounts
+        //    .AsNoTracking()
+        //    .Where(a => a.Name == name)
+        //    .ToListAsync();
+
+        //return response;
+        //}
+
+       
 
         
     }

@@ -2,7 +2,9 @@
 using h2o_challenge.Api.Models.AddAccount;
 using h2o_challenge.Api.Models.Error;
 using h2o_challenge.Domain.Contracts.UseCases.AddAccount;
+using h2o_challenge.Domain.Results;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace h2o_challenge.Api.Controllers.Account
 {
@@ -20,17 +22,30 @@ namespace h2o_challenge.Api.Controllers.Account
         }
 
         [HttpPost]
-        public IActionResult AddAccount(AddAccountInput input)
+        public async Task<IActionResult> AddAccount(AddAccountInput input)
         {
-            var validationResult = _addAccountInputValidator.Validate(input);
-
-            if (!validationResult.IsValid)
+            try
             {
-                return BadRequest(validationResult.Errors.ToCustomValidationFailure());
+                var validationResult = _addAccountInputValidator.Validate(input);
+
+                if (!validationResult.IsValid)
+                {
+                    return BadRequest(validationResult.Errors.ToCustomValidationFailure());
+                }
+                var customer = new Accounts(input.Name, input.Balance);
+                var response = await _addAccountUseCase.AddAccount(customer);
+
+                if (response.StatusCode.ToString().StartsWith(char.ToString('2')))
+                    return Ok(response);
+                else
+                    return BadRequest(response);
+
+        
             }
-            var customer = new Accounts(input.Name, input.Balance);
-            _addAccountUseCase.AddAccount(customer);
-            return Created("", input);
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
     }
 }

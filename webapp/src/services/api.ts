@@ -14,7 +14,7 @@ axios.defaults.baseURL = "http://localhost:5153/api/";
 export function loginBankAccount(
   name: string
 ): Promise<Account> {
-  return axios.post("/GetAccount", { name }).then((response) => response.data);
+  return axios.post("/GetAccount", { name }).then((response) => response.data.data);
 }
 export function createBankAccount(
   name: string,

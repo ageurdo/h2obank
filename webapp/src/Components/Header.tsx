@@ -24,9 +24,7 @@ const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provid
         <div className="ml-2">
           <span className="text-lg font-bold">{user?.name}</span>
           <br />
-          <span className="text-sm text-gray-600">{`Saldo: R$ ${user?.balance?.toFixed(
-            2
-          )}`}</span>
+          <span className="text-sm text-gray-600">{`Saldo: R$ ${user?.balance}`}</span>
         </div>
       </div>
       <ul className="flex justify-center items-center">

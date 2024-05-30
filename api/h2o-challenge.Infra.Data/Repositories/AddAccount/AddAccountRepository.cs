@@ -1,5 +1,7 @@
 ﻿using h2o_challenge.Domain.Contracts.Repositories.AddAccount;
+using h2o_challenge.Domain.Results;
 using h2o_challenge.Infra.Data.Context;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace h2o_challenge.Infra.Data.Repositories.AddAccount
 {
@@ -11,10 +13,18 @@ namespace h2o_challenge.Infra.Data.Repositories.AddAccount
             _context = context;
         }
 
-        public void AddAccount(Accounts account)
+        Task<RequestResult> IAddAccountRepository.AddAccount(Accounts account)
         {
+            if (_context.Accounts.Any(c => c.Name.ToLower() == account.Name.ToLower()))
+            {
+                var result = "Já existe uma conta com esse nome.";
+                throw new Exception(new RequestResult().BadRequest(result).Message);
+            }
+
             _context.Accounts.Add(account);
             _context.SaveChanges();
+
+            return Task.FromResult(new RequestResult().Ok(new object()));
         }
     }
 }

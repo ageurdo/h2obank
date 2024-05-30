@@ -1,7 +1,10 @@
-﻿namespace h2o_challenge.Domain.Contracts.UseCases.GetAccount
+﻿using h2o_challenge.Domain.Results;
+
+namespace h2o_challenge.Domain.Contracts.UseCases.GetAccount
 {
     public interface IGetAccountUseCase
     {
-        Accounts GetAccount(string account);  
+        Task<RequestResult> GetAccount(string account);
+
     }
 }

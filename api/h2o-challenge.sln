@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Domain", "h2o
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Infra.Data", "h2o-challenge.Infra.Data\h2o-challenge.Infra.Data.csproj", "{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Infra.Ioc", "h2o-challenge.Infra.Ioc\h2o-challenge.Infra.Ioc.csproj", "{9343580B-A182-4929-9C16-2BFB7B9D7200}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "h2o-challenge.Api", "h2o-challenge.Api\h2o-challenge.Api.csproj", "{2B12D3AA-9A13-440B-85BC-EB4B0626563C}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9343580B-A182-4929-9C16-2BFB7B9D7200}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B12D3AA-9A13-440B-85BC-EB4B0626563C}.Release|Any CPU.ActiveCfg = Release|Any CPU

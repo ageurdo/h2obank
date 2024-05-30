@@ -1,4 +1,5 @@
 ﻿using FluentValidation.Results;
+using h2o_challenge.Domain.Results;
 
 namespace h2o_challenge.Api.Models.Error
 {
