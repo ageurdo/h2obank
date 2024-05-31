@@ -1,7 +1,7 @@
 ﻿using h2o_challenge.Domain.Contracts.Repositories.AddAccount;
 using h2o_challenge.Domain.Results;
 using h2o_challenge.Infra.Data.Context;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace h2o_challenge.Infra.Data.Repositories.AddAccount
 {

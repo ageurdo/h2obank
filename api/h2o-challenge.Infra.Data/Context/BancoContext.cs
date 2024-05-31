@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using h2o_challenge.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace h2o_challenge.Infra.Data.Context
@@ -8,6 +9,7 @@ namespace h2o_challenge.Infra.Data.Context
         private IConfiguration _configuraciton;
 
         public DbSet<Accounts> Accounts { get; set; }        
+        public DbSet<Movements> Movements { get; set; }        
 
         public BancoContext(IConfiguration configuraciton, DbContextOptions options) : base(options)
         {

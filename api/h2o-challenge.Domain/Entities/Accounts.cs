@@ -14,4 +14,22 @@ public class Accounts
         Name = nome;
         Balance = balance;
     }
+
+    public void Deposit(decimal amount)
+    {
+        Balance += amount;
+    }
+
+    public void Withdraw(decimal amount)
+    {
+        if (amount <= Balance) 
+            Balance -= amount;
+        else
+        {
+            throw new InvalidOperationException("Saldo insuficiente");
+        }
+    }
+
+
+
 }

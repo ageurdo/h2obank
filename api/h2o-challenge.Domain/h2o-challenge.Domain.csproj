@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\Accounts - Cópia.cs" />
     <Compile Remove="Results\BusinessException.cs" />
   </ItemGroup>
 

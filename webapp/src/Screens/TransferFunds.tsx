@@ -45,14 +45,7 @@ const TransferFunds = () => {
     <div className="container">
       <h2 className="title">Transferência entre contas</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {/* <div className="my-4 ">
-          <label htmlFor="senderAccount">Conta remetente:</label>
-          <input
-            {...register("senderAccount", { required: true })}
-            className="input"
-          />
-          {errors.senderAccount && <span>Este campo é obrigatório</span>}
-        </div> */}
+       
         <div className="my-4 ">
           <label htmlFor="recipientAccount">Conta Destino:</label>
           <input

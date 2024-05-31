@@ -9,7 +9,7 @@ export interface Transaction {
   sender: Account;
   recipient: Account;
   amount: number;
-  timestamp: string;
+  dateMovement: string;
 }
 
 export interface TransactionQuery {

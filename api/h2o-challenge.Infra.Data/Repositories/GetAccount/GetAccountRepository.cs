@@ -1,5 +1,4 @@
-﻿using Azure;
-using h2o_challenge.Domain.Contracts.Repositories.AddAccount;
+﻿
 using h2o_challenge.Domain.Contracts.Repositories.GetAccount;
 using h2o_challenge.Domain.Results;
 using h2o_challenge.Infra.Data.Context;

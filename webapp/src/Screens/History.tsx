@@ -10,21 +10,21 @@ const transactionHistory = [
     sender: "Conta A",
     receiver: "Conta B",
     amount: 100.0,
-    type: "Transferência",
+    dateMovement: "10/10/22",
   },
   {
     id: 2,
     sender: "Conta C",
     receiver: "Conta A",
     amount: 50.0,
-    type: "Depósito",
+    dateMovement: "10/10/22",
   },
   {
     id: 3,
     sender: "Conta A",
     receiver: "Conta D",
     amount: 75.0,
-    type: "Saque",
+    dateMovement: "10/10/22",
   },
 ];
 
@@ -60,13 +60,13 @@ const History: React.FC = () => {
             <li
               key={transaction.id}
               className={`flex w-full gap-6 h-16 items-center justify-start px-4 divide-y 
-            ${transaction.type === "Depósito" ? "bg-green-50" : ""} 
-            ${transaction.type === "Transferência" ? "bg-yellow-50" : ""}
-            ${transaction.type === "Saque" ? "bg-red-50" : ""}`}
+            ${transaction.dateMovement === "Depósito" ? "bg-green-50" : ""} 
+            ${transaction.dateMovement === "Transferência" ? "bg-yellow-50" : ""}
+            ${transaction.dateMovement === "Saque" ? "bg-red-50" : ""}`}
             >
               <span className="my-2 flex-1 ">
                 <span className="flex-1 w-36">
-                  {transaction.type === "Transferência" && (
+                  {transaction.dateMovement === "Transferência" && (
                     <div className="flex gap-4 items-center">
                       <div className="rounded-full p-2 avatar bg-orange-100">
                         <Icon
@@ -84,7 +84,7 @@ const History: React.FC = () => {
                       </div>
                     </div>
                   )}
-                  {transaction.type === "Depósito" && (
+                  {transaction.dateMovement === "Depósito" && (
                     <div className="flex gap-4 items-center">
                       <div className="rounded-full p-2 avatar bg-green-200">
                         <Icon
@@ -98,7 +98,7 @@ const History: React.FC = () => {
                       </div>
                     </div>
                   )}
-                  {transaction.type === "Saque" && (
+                  {transaction.dateMovement === "Saque" && (
                     <div className="flex gap-4 items-center">
                       <div className="rounded-full p-2 avatar bg-red-100">
                         <Icon

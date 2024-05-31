@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("h2o-challenge.Infra.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c498f11228e3fa8d7bb8ffab0603813382300019")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62ad31a92f97e084b7ced42d6fdca14b3ba9ccea")]
 [assembly: System.Reflection.AssemblyProductAttribute("h2o-challenge.Infra.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("h2o-challenge.Infra.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

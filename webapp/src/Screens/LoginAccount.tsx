@@ -26,7 +26,6 @@ const LoginAccount = () => {
       name: data.name,
       balance: data.balance,
     };
-    console.log(newAccount);
 
     await loginBankAccount(newAccount.name).then(
       (response) => {

@@ -26,14 +26,14 @@ export function createBankAccount(
 }
 
 export function transfer(payload: TransactionQuery): Promise<void> {
-  return axios.post("/Transfer", payload).then((response) => response.data);
+  return axios.post("/TransferFunds", payload).then((response) => response.data);
 }
 
-export function getTransactions(
-  filters: TransactionFilters,
-  account: string
+export function getMovements(
+  filters?: TransactionFilters,
+  account?: string
 ): Promise<Transaction[]> {
   return axios
-    .post("/api/get-transactions", { filters, account })
+    .post("/api/getMovements", { filters, account })
     .then((response) => response.data);
 }
