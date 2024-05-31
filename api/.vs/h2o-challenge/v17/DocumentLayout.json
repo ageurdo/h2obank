@@ -7,26 +7,6 @@
       "RelativeMoniker": "D:0:0:{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}|h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj|solutionrelative:h2o-challenge.infra.data\\repositories\\getmovements\\getmovementsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}|h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.infra.data\\repositories\\transferfunds\\transferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}|h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj|solutionrelative:h2o-challenge.infra.data\\repositories\\transferfunds\\transferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.domain\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|solutionrelative:h2o-challenge.domain\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\models\\getmovements\\getmovementsinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\models\\getmovements\\getmovementsinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\models\\getmovements\\getmovementsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\models\\getmovements\\getmovementsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4506829C-74D0-4368-A8EE-8E65086CBB63}|h2o-challenge.Application\\h2o-challenge.Application.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.application\\usecases\\getmovements\\getmovementsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4506829C-74D0-4368-A8EE-8E65086CBB63}|h2o-challenge.Application\\h2o-challenge.Application.csproj|solutionrelative:h2o-challenge.application\\usecases\\getmovements\\getmovementsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.domain\\contracts\\usecases\\getmovements\\igetmovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|solutionrelative:h2o-challenge.domain\\contracts\\usecases\\getmovements\\igetmovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,24 +15,44 @@
       "RelativeMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|solutionrelative:h2o-challenge.domain\\contracts\\repositories\\getmovements\\igetmovementsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4506829C-74D0-4368-A8EE-8E65086CBB63}|h2o-challenge.Application\\h2o-challenge.Application.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.application\\usecases\\getmovements\\getmovementsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4506829C-74D0-4368-A8EE-8E65086CBB63}|h2o-challenge.Application\\h2o-challenge.Application.csproj|solutionrelative:h2o-challenge.application\\usecases\\getmovements\\getmovementsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\models\\getmovements\\getmovementsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\models\\getmovements\\getmovementsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\movements\\getmovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\movements\\getmovements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\transferfunds\\trasnferfundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\transferfunds\\trasnferfundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\models\\getmovements\\getmovementsinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\models\\getmovements\\getmovementsinputvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\account\\getaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\account\\getaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\account\\addaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\account\\addaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\transferfunds\\trasnferfundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\transferfunds\\trasnferfundscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\controllers\\account\\getaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\controllers\\account\\getaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}|h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.infra.data\\repositories\\transferfunds\\transferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{832AB1A8-4742-42E9-97A6-1CFE7AC2D183}|h2o-challenge.Infra.Data\\h2o-challenge.Infra.Data.csproj|solutionrelative:h2o-challenge.infra.data\\repositories\\transferfunds\\transferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.domain\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97EEB5C7-F1C9-48BD-A66E-3EB5BD96A8FB}|h2o-challenge.Domain\\h2o-challenge.Domain.csproj|solutionrelative:h2o-challenge.domain\\entities\\accounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|solutionrelative:h2o-challenge.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B12D3AA-9A13-440B-85BC-EB4B0626563C}|h2o-challenge.Api\\h2o-challenge.Api.csproj|e:\\workspace\\h20\\h2obank\\api\\h2o-challenge.api\\models\\transferfunds\\transferfundsinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,19 +134,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetMovementsInput.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
-              "RelativeToolTip": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAiAAAA",
+              "DocumentIndex": 3,
+              "Title": "GetMovementsUseCase.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
+              "RelativeToolTip": "h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBQAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:14:21.804Z",
+              "WhenOpened": "2024-05-31T03:14:24.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGetMovementsRepository.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
+              "RelativeToolTip": "h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAYwA8AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:14:28.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IGetMovements.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
+              "RelativeToolTip": "h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwAsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:14:31.027Z",
               "EditorCaption": ""
             },
             {
@@ -157,92 +183,40 @@
               "RelativeDocumentMoniker": "h2o-challenge.Infra.Data\\Repositories\\GetMovements\\GetMovementsRepository.cs",
               "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Data\\Repositories\\GetMovements\\GetMovementsRepository.cs",
               "RelativeToolTip": "h2o-challenge.Infra.Data\\Repositories\\GetMovements\\GetMovementsRepository.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAYwEcAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAswB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T01:21:57.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetMovementsInputValidator.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
-              "RelativeToolTip": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "DocumentIndex": 4,
+              "Title": "GetMovementsInput.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
+              "RelativeToolTip": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T01:34:49.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IGetMovementsRepository.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
-              "RelativeToolTip": "h2o-challenge.Domain\\Contracts\\Repositories\\GetMovements\\IGetMovementsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:14:28.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Accounts.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Entities\\Accounts.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Entities\\Accounts.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Entities\\Accounts.cs",
-              "RelativeToolTip": "h2o-challenge.Domain\\Entities\\Accounts.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-30T20:20:28.526Z",
+              "WhenOpened": "2024-05-31T03:14:21.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GetMovementsUseCase.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
-              "RelativeToolTip": "h2o-challenge.Application\\useCases\\GetMovements\\GetMovementsUseCase.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:14:24.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IGetMovements.cs",
-              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
-              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
-              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
-              "RelativeToolTip": "h2o-challenge.Domain\\Contracts\\UseCases\\GetMovements\\IGetMovements.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:14:31.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "GetMovements.cs",
               "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Controllers\\Movements\\GetMovements.cs",
               "RelativeDocumentMoniker": "h2o-challenge.Api\\Controllers\\Movements\\GetMovements.cs",
               "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Controllers\\Movements\\GetMovements.cs",
               "RelativeToolTip": "h2o-challenge.Api\\Controllers\\Movements\\GetMovements.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAaAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAswCQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:06:58.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "AddAccountController.cs",
               "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Controllers\\Account\\AddAccountController.cs",
               "RelativeDocumentMoniker": "h2o-challenge.Api\\Controllers\\Account\\AddAccountController.cs",
@@ -255,7 +229,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetMovementsInputValidator.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
+              "RelativeToolTip": "h2o-challenge.Api\\Models\\GetMovements\\GetMovementsInputValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T01:34:49.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Accounts.cs",
+              "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Entities\\Accounts.cs",
+              "RelativeDocumentMoniker": "h2o-challenge.Domain\\Entities\\Accounts.cs",
+              "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Domain\\Entities\\Accounts.cs",
+              "RelativeToolTip": "h2o-challenge.Domain\\Entities\\Accounts.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowA4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T20:20:28.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Program.cs",
               "RelativeDocumentMoniker": "h2o-challenge.Api\\Program.cs",
@@ -454,7 +454,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -484,13 +484,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "TransferRepository.cs",
               "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Data\\Repositories\\TransferFunds\\TransferRepository.cs",
               "RelativeDocumentMoniker": "h2o-challenge.Infra.Data\\Repositories\\TransferFunds\\TransferRepository.cs",
               "ToolTip": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Infra.Data\\Repositories\\TransferFunds\\TransferRepository.cs",
               "RelativeToolTip": "h2o-challenge.Infra.Data\\Repositories\\TransferFunds\\TransferRepository.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAcwEIAAAAYAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAcwEAAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-30T20:36:47.762Z",
               "EditorCaption": ""
@@ -523,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "GetAccountController.cs",
               "DocumentMoniker": "E:\\Workspace\\H20\\h2obank\\api\\h2o-challenge.Api\\Controllers\\Account\\GetAccountController.cs",
               "RelativeDocumentMoniker": "h2o-challenge.Api\\Controllers\\Account\\GetAccountController.cs",

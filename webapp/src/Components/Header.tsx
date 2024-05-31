@@ -7,7 +7,8 @@ interface HeaderProps {
   onLogout: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provide a default value of null for the user prop
+const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => {
+  // Provide a default value of null for the user prop
   const initials = user?.name
     ? user.name
         .split(" ")
@@ -17,14 +18,14 @@ const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provid
 
   return (
     <nav className="bg-blue-500 h-16 flex justify-between items-center w-full px-16">
-      <div className="flex items-center ml-4">
-        <div className="w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center">
-          <span className="text-lg font-bold">{initials}</span>
+      <div className="flex items-center ml-4 gap-4">
+        <div className="w-10 h-10 bg-gray-50 rounded-full flex justify-center items-center">
+          <span className="text-lg text-blue-500 font-bold">{initials}</span>
         </div>
-        <div className="ml-2">
-          <span className="text-lg font-bold">{user?.name}</span>
+        <div>
+          <span className="text-lg text-white font-bold">{user?.name}</span>
           <br />
-          <span className="text-sm text-gray-600">{`Saldo: R$ ${user?.balance}`}</span>
+          <span className="text-sm text-white">{`Saldo: R$ ${user?.balance}`}</span>
         </div>
       </div>
       <ul className="flex justify-center items-center">
@@ -40,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provid
         </li>
         <li>
           <button
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
             onClick={onLogout}
           >
             Sair
