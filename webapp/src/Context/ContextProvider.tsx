@@ -19,7 +19,7 @@ export const ContextProvider = ({
 
   useEffect(() => {
     getAccount();
-  }, []); // <- Adicionei o useEffect aqui
+  }, []); 
 
   const loginAccountContext = ({ id, name, balance }: Account) => {
     const newAccount: Account = {

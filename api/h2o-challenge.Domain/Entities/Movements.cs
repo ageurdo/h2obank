@@ -7,6 +7,6 @@ namespace h2o_challenge.Domain.Entities
         public int IdSenderAccount { get; set; }
         public int IdRecipientAccount { get; set; }
         public decimal Amount { get; set; }
-        public DateTime DateMovment { get; set; }
+        public DateTimeOffset DateMovement { get; set; }
     }
 }

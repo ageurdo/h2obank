@@ -26,7 +26,7 @@ CREATE TABLE Movements (
     IdSenderAccount INT NOT NULL,
     IdRecipientAccount INT NOT NULL,
     Amount DECIMAL(10, 2) NOT NULL,
-    dateMovement DATETIME NOT NULL DEFAULT GETDATE(),
+    dateMovement DATETIMEOFFSET NOT NULL DEFAULT GETDATE(),
     FOREIGN KEY (IdSenderAccount) REFERENCES Accounts(Id),
     FOREIGN KEY (IdRecipientAccount) REFERENCES Accounts(Id)
 );

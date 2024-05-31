@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
 import Dropdown from "../Components/Dropdown";
 import Search from "../Components/Search";
+import { getMovements } from "../Services/api";
+import { Transaction } from "../Services/types";
 
 // Mock de dados para o histórico de transações
 const transactionHistory = [
@@ -33,10 +35,30 @@ const onChangedDropdownFilter = (value: string) => {
 };
 
 const History: React.FC = () => {
+  const [movements, setMovements] = useState<Transaction[]>([]);
+
+  useEffect(() => {
+    fetchMovements();
+  }, []);
+
+  const fetchMovements = async () => {
+    await getMovements().then(
+      (response) => {
+        console.log("Then -> ", response);
+        setMovements(response);
+        return response;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  };
+
   return (
     <div className="container">
       <h1 className="title justify-center items-center flex container">
         Histórico de Transações
+      <div>{movements && movements[0]?.amount}</div>
       </h1>
       <Dropdown
         items={["teste", "teste2"]}
@@ -61,7 +83,9 @@ const History: React.FC = () => {
               key={transaction.id}
               className={`flex w-full gap-6 h-16 items-center justify-start px-4 divide-y 
             ${transaction.dateMovement === "Depósito" ? "bg-green-50" : ""} 
-            ${transaction.dateMovement === "Transferência" ? "bg-yellow-50" : ""}
+            ${
+              transaction.dateMovement === "Transferência" ? "bg-yellow-50" : ""
+            }
             ${transaction.dateMovement === "Saque" ? "bg-red-50" : ""}`}
             >
               <span className="my-2 flex-1 ">

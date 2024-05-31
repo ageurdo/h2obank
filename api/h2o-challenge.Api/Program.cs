@@ -14,9 +14,14 @@ using System.Globalization;
 using h2o_challenge.Api.Models.AddAccount;
 using h2o_challenge.Domain.Contracts.Repositories.TransferFunds;
 using h2o_challenge.Infra.Data.Repositories.TransferFunds;
+using h2o_challenge.Infra.Data.Repositories.GetMovements;
 using h2o_challenge.Domain.Contracts.UseCases.TransferFunds;
 using h2o_challenge.Application.useCases.TransferFunds;
 using h2o_challenge.Api.Models.TransferFunds;
+using h2o_challenge.Application.useCases.GetMovements;
+using h2o_challenge.Domain.Contracts.UseCases.GetMovements;
+using h2o_challenge.Api.Models.GetMovements;
+using h2o_challenge.Domain.Contracts.Repositories.GetMovements;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +37,10 @@ builder.Services.AddScoped<IValidator<GetAccountInput>, GetAccountInputValidator
 builder.Services.AddScoped<ITransferFundsRepository, TransferFundsRepository>();
 builder.Services.AddScoped<ITransferFundsUseCase, TransferFundsUseCase>();
 builder.Services.AddScoped<IValidator<TransferFundsInput>, TransferFundsInputValidator>();
+
+builder.Services.AddScoped<IGetMovementsRepository, GetMovementsRepository>();
+builder.Services.AddScoped<IGetMovementsUseCase, GetMovementsUseCase>();
+builder.Services.AddScoped<IValidator<GetMovementsInput>, GetMovementsInputValidator>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

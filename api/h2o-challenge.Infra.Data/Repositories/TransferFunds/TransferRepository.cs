@@ -64,7 +64,7 @@ namespace h2o_challenge.Infra.Data.Repositories.TransferFunds
                 IdSenderAccount = idSenderAccount,
                 IdRecipientAccount = idRecipientAccount,
                 Amount = amount,
-                DateMovment = DateTime.Now
+                DateMovement = DateTime.Now
             };
 
             _context.Movements.Add(movement);
