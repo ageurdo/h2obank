@@ -5,22 +5,24 @@ export interface Account {
 }
 
 export interface Transaction {
-  id: string;
-  sender: Account;
-  recipient: Account;
+  id: number;
   amount: number;
   dateMovement: string;
+  senderAccount: Account;
+  recipientAccount: Account;
 }
 
-export interface TransactionQuery {
+export interface TransferQuery {
   sender: string;
   recipient: string;
   amount: number;
 }
 
 export interface TransactionFilters {
-  startDate?: string;
-  endDate?: string;
-  minAmount?: number;
-  maxAmount?: number;
+  minValue?: number;
+  maxValue?: number;
+  senderId?: number;
+  // recipientId: number;
+  startDate: string;
+  endDate: string;
 }

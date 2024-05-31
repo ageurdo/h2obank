@@ -11,7 +11,7 @@ export default function RootLayout() {
 
   useEffect(() => {
     if (Object.keys(account).length > 0) {
-      navigate("/dashboard");
+      navigate("/history");
     } else navigate("/login");
   }, [account, navigate]);
 

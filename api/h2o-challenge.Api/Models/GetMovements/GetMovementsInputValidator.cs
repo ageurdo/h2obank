@@ -6,8 +6,9 @@ namespace h2o_challenge.Api.Models.GetMovements
     {
         public GetMovementsInputValidator() 
         {
-            RuleFor(a => a.senderId).NotEqual(0).NotEmpty().NotNull();
-            RuleFor(a => a.recipientId).NotEqual(0).NotEmpty().NotNull();
+            //RuleFor(a => a.recipientId).NotEmpty();
+            //RuleFor(a => a.startDate).NotEmpty();
+            //RuleFor(a => a.endDate).NotEmpty();
         }
     }
 }

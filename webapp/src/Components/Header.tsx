@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provid
     : "";
 
   return (
-    <nav className="bg-blue-500 h-16 flex justify-between items-center w-full">
+    <nav className="bg-blue-500 h-16 flex justify-between items-center w-full px-16">
       <div className="flex items-center ml-4">
         <div className="w-10 h-10 bg-gray-200 rounded-full flex justify-center items-center">
           <span className="text-lg font-bold">{initials}</span>
@@ -29,12 +29,12 @@ const Header: React.FC<HeaderProps> = ({ user = null, onLogout }) => { // Provid
       </div>
       <ul className="flex justify-center items-center">
         <li className="mr-4">
-          <NavLink to="/transfer" className="text-blue-700">
+          <NavLink to="/transfer" className="text-white">
             Transferência
           </NavLink>
         </li>
         <li className="mr-4">
-          <NavLink to="/history" className="text-blue-700">
+          <NavLink to="/history" className="text-white">
             Histórico
           </NavLink>
         </li>

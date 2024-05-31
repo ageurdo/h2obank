@@ -3,7 +3,7 @@ import {
   Account,
   Transaction,
   TransactionFilters,
-  TransactionQuery,
+  TransferQuery,  
 } from "./types";
 
 // const apiKey = process.env.REACT_APP_API_KEY;
@@ -25,15 +25,16 @@ export function createBankAccount(
     .then((response) => response.data);
 }
 
-export function transfer(payload: TransactionQuery): Promise<void> {
+export function transfer(payload: TransferQuery): Promise<void> {
   return axios.post("/TransferFunds", payload).then((response) => response.data);
 }
 
 export function getMovements(
   filters?: TransactionFilters,
-  account?: string
 ): Promise<Transaction[]> {
   return axios
-    .post("/api/getMovements", { filters, account })
-    .then((response) => response.data);
+    .post("/GetMovements", { filters })
+    .then((response) => response.data.data);
 }
+
+

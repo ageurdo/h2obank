@@ -1,10 +1,9 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import "../index.css";
 import { transfer } from "../Services/api";
-import { TransactionQuery } from "../Services/types";
+import { TransferQuery } from "../Services/types";
 import { AccountContext } from "../Context/ContextProvider";
 import { useContext } from "react";
-
 
 type Inputs = {
   senderAccount: string;
@@ -13,7 +12,7 @@ type Inputs = {
 };
 
 const TransferFunds = () => {
-  const { account} = useContext(AccountContext);
+  const { account, loginAccountContext } = useContext(AccountContext);
 
   const {
     register,
@@ -23,7 +22,7 @@ const TransferFunds = () => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     // Aqui você pode criar uma nova conta bancária com o nome fornecido e saldo inicial zero
 
-    const newAccount: TransactionQuery = {
+    const newAccount: TransferQuery = {
       sender: account.id,
       recipient: data.recipientAccount,
       amount: parseInt(data.balance),
@@ -33,6 +32,13 @@ const TransferFunds = () => {
     await transfer(newAccount).then(
       (response) => {
         console.log("Then -> ", response);
+
+        loginAccountContext({
+          id: account.id,
+          name: account.name,
+          balance: account.balance - newAccount.amount,
+        });
+
         return response;
       },
       (error) => {
@@ -45,7 +51,6 @@ const TransferFunds = () => {
     <div className="container">
       <h2 className="title">Transferência entre contas</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-       
         <div className="my-4 ">
           <label htmlFor="recipientAccount">Conta Destino:</label>
           <input

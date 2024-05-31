@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("h2o-challenge.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bb3b44ef01f27cfa4761286b090d87ba8b9bb6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4237426b515c545a9bc737b11afe88ce47725ea3")]
 [assembly: System.Reflection.AssemblyProductAttribute("h2o-challenge.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("h2o-challenge.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

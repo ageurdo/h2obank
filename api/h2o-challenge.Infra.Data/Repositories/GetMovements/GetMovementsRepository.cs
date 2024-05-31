@@ -29,22 +29,27 @@ namespace h2o_challenge.Infra.Data.Repositories.GetMovements
             DateTimeOffset? endDate = null
         )
         {
-            var query = _context.Movements.AsQueryable();
+            var query = _context.Movements
+                .AsQueryable();
 
-            if (minValue > 0)
+            if (senderId > 0 && senderId > 0)
             {
-                query = query.Where(m => m.Amount >= minValue);
+                query = query.Where(m => m.IdSenderAccount == senderId);
             }
 
-            if (maxValue > 0)
+            if (recipientId > 0 && recipientId > 0)
             {
-                query = query.Where(m => m.Amount <= maxValue);
+                query = query.Where(m => m.IdRecipientAccount == recipientId);
             }
 
-
-            if (recipientId != 0 && senderId !=0)
+            if (minValue.HasValue && minValue.Value > 0)
             {
-                query = query.Where(m => m.IdRecipientAccount == recipientId).Where(s => s.IdSenderAccount == senderId);
+                query = query.Where(m => m.Amount >= minValue.Value);
+            }
+
+            if (maxValue.HasValue && maxValue.Value > 0)
+            {
+                query = query.Where(m => m.Amount <= maxValue.Value);
             }
 
             if (startDate.HasValue && endDate.HasValue)
@@ -60,15 +65,50 @@ namespace h2o_challenge.Infra.Data.Repositories.GetMovements
                 query = query.Where(m => m.DateMovement <= endDate.Value);
             }
 
-            var movements = await query.ToListAsync();
+            var movements = await query
+                .Include(m => m.SenderAccount)
+                .Include(m => m.RecipientAccount)
+                .ToListAsync();
 
-            return new RequestResult { 
-                Data = movements,
+            return new RequestResult
+            {
+                Data = movements.Select(m => new MovementResponse
+                {
+                    Id = m.Id,
+                    Amount = m.Amount,
+                    DateMovement = m.DateMovement,
+                    SenderAccount = new AccountResponse
+                    {
+                        Id = m.SenderAccount.Id,
+                        Name = m.SenderAccount.Name,
+                        Balance = m.SenderAccount.Balance
+                    },
+                    RecipientAccount = new AccountResponse
+                    {
+                        Id = m.RecipientAccount.Id,
+                        Name = m.RecipientAccount.Name,
+                        Balance = m.RecipientAccount.Balance
+                    }
+                }),
                 StatusCode = 200,
                 Message = "Consulta realizada com sucesso"
             };
         }
 
-       
+        public class MovementResponse
+        {
+            public int Id { get; set; }
+            public decimal Amount { get; set; }
+            public DateTimeOffset DateMovement { get; set; }
+            public AccountResponse SenderAccount { get; set; }
+            public AccountResponse RecipientAccount { get; set; }
+        }
+
+        public class AccountResponse
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public decimal Balance { get; set; }
+        }
     }
 }
