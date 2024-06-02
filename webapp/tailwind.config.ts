@@ -10,8 +10,8 @@ export default {
       },
       colors: {
         primary: {
-          500: "#FF6363;",
-          800: "#FF1313;",
+          100: "rgb(0, 89, 255);",
+          200: "rgb(0, 129, 211)/",
         },
       },
       fontSize: {
