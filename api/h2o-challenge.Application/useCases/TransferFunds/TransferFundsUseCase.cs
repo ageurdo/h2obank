@@ -13,11 +13,11 @@ namespace h2o_challenge.Application.useCases.TransferFunds
             _transferRepository = transferRepository;
         }
 
-        public async Task<RequestResult> TransferFunds(int idSenderAccount, int idRecipientAccount, decimal amount)
+        public async Task<RequestResult> TransferFunds(int idSenderAccount, string recipient, decimal amount)
         {
             try
             {
-                return await _transferRepository.TransferFunds(idSenderAccount, idRecipientAccount, amount);
+                return await _transferRepository.TransferFunds(idSenderAccount, recipient, amount);
             }
 
             catch (Exception ex)

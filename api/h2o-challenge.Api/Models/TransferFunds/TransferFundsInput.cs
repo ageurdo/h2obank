@@ -3,7 +3,7 @@
     public class TransferFundsInput
     {
         public int Sender { get; set; } = 0;
-        public int Recipient { get; set; } = 0;
+        public string Recipient { get; set; } = "";
         public decimal Amount { get; set; } = decimal.Zero;
     }
 }

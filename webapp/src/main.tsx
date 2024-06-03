@@ -35,9 +35,10 @@ export const router = createBrowserRouter(
 );
 
 ReactDOM.createRoot(rootElement).render(
-  <React.StrictMode>
+  // Strict mode faz renderizar dobrado o app todo
+  // <React.StrictMode>
     <ContextProvider>
       <RouterProvider router={router}></RouterProvider>
     </ContextProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );

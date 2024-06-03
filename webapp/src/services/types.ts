@@ -22,7 +22,7 @@ export interface TransactionFilters {
   minValue?: number;
   maxValue?: number;
   senderId?: number;
-  // recipientId: number;
-  startDate: string;
-  endDate: string;
+  recipientId: number;
+  startDate?: string;
+  endDate?: string;
 }

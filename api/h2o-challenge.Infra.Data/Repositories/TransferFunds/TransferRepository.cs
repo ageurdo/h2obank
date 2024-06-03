@@ -2,6 +2,7 @@
 using h2o_challenge.Domain.Entities;
 using h2o_challenge.Domain.Results;
 using h2o_challenge.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace h2o_challenge.Infra.Data.Repositories.TransferFunds
 {
@@ -14,7 +15,7 @@ namespace h2o_challenge.Infra.Data.Repositories.TransferFunds
             _context = context;
         }
 
-        public async Task<RequestResult> TransferFunds(int idSenderAccount, int idRecipientAccount, decimal amount)
+        public async Task<RequestResult> TransferFunds(int idSenderAccount, string recipient, decimal amount)
         {
             // Verificar se a conta do remetente existe
             var senderAccount = await _context.Accounts.FindAsync(idSenderAccount);
@@ -29,14 +30,14 @@ namespace h2o_challenge.Infra.Data.Repositories.TransferFunds
             }
 
             // Verificar se a conta do destinatário existe
-            var recipientAccount = await _context.Accounts.FindAsync(idRecipientAccount);
+            var recipientAccount = await _context.Accounts.FirstOrDefaultAsync(a => a.Name.Contains(recipient));
             if (recipientAccount == null)
             {
                 return new RequestResult
                 {
                     Data = { },
                     StatusCode = 400,
-                    Message = $"Conta do destinatário com o ID {idRecipientAccount} não encontrada."
+                    Message = $"Conta do destinatário com o ID {recipient} não encontrada."
                 };
             }
 
@@ -62,7 +63,7 @@ namespace h2o_challenge.Infra.Data.Repositories.TransferFunds
             var movement = new Movements
             {
                 IdSenderAccount = idSenderAccount,
-                IdRecipientAccount = idRecipientAccount,
+                IdRecipientAccount = recipientAccount.Id,
                 Amount = amount,
                 DateMovement = DateTime.Now
             };

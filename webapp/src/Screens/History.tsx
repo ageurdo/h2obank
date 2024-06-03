@@ -14,14 +14,14 @@ const History: React.FC = () => {
   const [filter, setFilter] = useState<TransactionFilters>({
     minValue: 0,
     maxValue: 0,
-    senderId: 0,
-    recipientId: parseInt(account.id),
-    startDate: new Date().setDate(new Date().getDate() - 30).toString(),
-    endDate: new Date().toString(),
+    senderId: parseInt(account.id),
+    recipientId: 0,
+    startDate: "",
+    endDate: "",
   });
 
-  const formattedDate = (date) => {
-    return format(date, "dd/MM/yyyy HH:mm:ss", { locale: ptBR });
+  const formattedDate = (date: string) => {
+    return format(date, "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
   };
 
   useEffect(() => {
@@ -34,8 +34,8 @@ const History: React.FC = () => {
       maxValue: filter.maxValue,
       senderId: filter.senderId,
       recipientId: filter.recipientId,
-      startDate: filter.senderId?.toString() || Date.now().toString(),
-      endDate: filter.endDate,
+      startDate: filter.startDate && formattedDate(filter.startDate),
+      endDate: filter.endDate && formattedDate(filter.endDate),
     }).then(
       (response) => {
         console.log("Then -> ", response);
@@ -50,6 +50,7 @@ const History: React.FC = () => {
   };
 
   const handleFilterChange = (newFilter: TransactionFilters) => {
+    console.log(`o que esta chegando no history submit [e]`, newFilter);
     setFilter(newFilter);
   };
 
@@ -93,57 +94,72 @@ const History: React.FC = () => {
                 <span className="my-2 flex-1">
                   <span className="flex-1 w-36 bg-pink-400">
                     {item.recipientAccount.id === account.id && (
-                      <div className="flex gap-4 items-center">
-                        <div className="rounded-full p-2 avatar bg-green-300">
-                          <Icon
-                            width="28"
-                            icon="hugeicons:arrow-data-transfer-diagonal"
-                            style={{ color: "green" }}
-                          />
-                        </div>
-                        <div className="flex flex-col">
-                          <p className="font-medium">Transferência recebida </p>
-                          <div className="font-normal text-gray-500 text-sm">
-                            de{" "}
-                            <span className="font-medium">
-                              {item.senderAccount.name}{" "}
-                            </span>
-                            no valor de{" "}
-                            <span className="font-medium">
-                              R$ {item.amount}
-                            </span>
+                      <div className="flex gap-4   items-center justify-between">
+                        <div className="flex gap-4 items-center">
+                          <div className="rounded-full p-2 avatar bg-green-300">
+                            <Icon
+                              width="28"
+                              icon="hugeicons:arrow-data-transfer-diagonal"
+                              style={{ color: "green" }}
+                            />
+                          </div>
+                          <div className="flex flex-col">
+                            <p className="font-medium">
+                              Transferência recebida{" "}
+                            </p>
+                            <div className="font-normal text-gray-500 text-sm">
+                              de{" "}
+                              <span className="font-medium">
+                                {item.senderAccount.name}{" "}
+                              </span>
+                              no valor de{" "}
+                              <span className="font-medium">
+                                R$ {item.amount}
+                              </span>
+                            </div>
                           </div>
                         </div>
+                        <span className="flex justify-center items-center ">
+                          {item.dateMovement &&
+                            formattedDate(item.dateMovement)}
+                        </span>
                       </div>
                     )}
 
                     {item.senderAccount.id === account.id && (
-                      <div className="flex gap-4 items-center">
-                        <div className="rounded-full p-2 avatar bg-red-300">
-                          <Icon
-                            width="28"
-                            icon="hugeicons:arrow-data-transfer-diagonal"
-                            style={{ color: "red" }}
-                          />
-                        </div>
-                        <div className="flex flex-col">
-                          <p className="font-medium">Transferência enviada </p>
-                          <div className="font-normal text-gray-500 text-sm">
-                            para{" "}
-                            <span className="font-medium">
-                              {item.recipientAccount.name}{" "}
-                            </span>
-                            no valor de{" "}
-                            <span className="font-medium">
-                              R$ {item.amount}
-                            </span>
+                      <div className="flex gap-4   items-center justify-between">
+                        <div className="flex gap-4 items-center">
+                          <div className="rounded-full p-2 avatar bg-red-300">
+                            <Icon
+                              width="28"
+                              icon="hugeicons:arrow-data-transfer-diagonal"
+                              style={{ color: "red" }}
+                            />
+                          </div>
+                          <div className="flex flex-col">
+                            <p className="font-medium">
+                              Transferência enviada{" "}
+                            </p>
+                            <div className="font-normal text-gray-500 text-sm">
+                              para{" "}
+                              <span className="font-medium">
+                                {item.recipientAccount.name}{" "}
+                              </span>
+                              no valor de{" "}
+                              <span className="font-medium">
+                                R$ {item.amount}
+                              </span>
+                            </div>
                           </div>
                         </div>
+                        <span className="flex justify-center items-center ">
+                          {item.dateMovement &&
+                            formattedDate(item.dateMovement)}
+                        </span>
                       </div>
                     )}
                   </span>
                 </span>
-                <span>{formattedDate(item.dateMovement)}</span>
               </li>
               <hr className="border-gray-200 "></hr>
             </div>

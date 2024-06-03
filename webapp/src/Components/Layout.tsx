@@ -2,12 +2,14 @@ import Header from "./Header";
 import "./../index.css";
 import { Outlet } from "react-router-dom";
 import { AccountContext } from "../Context/ContextProvider";
-import { useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function RootLayout() {
+const RootLayout = React.memo(function RootLayout() {
   const navigate = useNavigate();
   const { account, logoutAccountContext } = useContext(AccountContext);
+  
+  console.log("LAYOUT");
 
   useEffect(() => {
     if (Object.keys(account).length > 0) {
@@ -34,4 +36,6 @@ export default function RootLayout() {
       </main>
     </div>
   );
-}
+});
+
+export default RootLayout;
